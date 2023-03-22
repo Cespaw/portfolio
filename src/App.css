@@ -1,15 +1,194 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --grey-background-gradient: linear-gradient(0deg, #282c34, grey);
+  --blue-background-gradient: linear-gradient(to right, #6190e8, #a7bfe8);
+  --blue2-background-gradient: linear-gradient(0deg, #8ed9ff, #000c40);
+
+  --blue-hover: lightblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: whitesmoke;
+
+  margin: 0;
+  padding: 0;
+}
+
+#About {
+  width: 100%;
+  height: 100vh;
+}
+
+.about-text {
+  transition: all 20s;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  transform: translate(-13%, -42%);
+  color: #fff;
+}
+
+.about-text h1 {
+  font-size: 3.5rem;
+}
+
+.about-text p {
+  font-size: 2.5rem;
+  margin: 25px 0px 25px;
+}
+
+#Experience {
+  width: 100%;
+  height: 100vh;
+}
+
+.experience-text {
+  position: absolute;
+  left: 25%;
+  top: 120%;
+  transform: translate(-13%, -42%);
+  color: #fff;
+}
+
+.experience-text h1 {
+  font-size: 3.5rem;
+}
+
+.experience-text p {
+  font-size: 2.5rem;
+  margin: 25px 0px 25px;
+}
+
+#Projects {
+  width: 100%;
+  height: 100vh;
+}
+
+.projects-text {
+  position: absolute;
+  left: 25%;
+  top: 200%;
+  transform: translate(-13%, -42%);
+  color: #fff;
+}
+
+.projects-text h1 {
+  font-size: 3.5rem;
+}
+
+.projects-text p {
+  font-size: 2.5rem;
+  margin: 25px 0px 25px;
+}
+
+#Contact{
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+
+  left: 5%;
+  top: 280%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.contact-text {
+  transform: translate(-13%, -42%);
+  color: rgb(0, 0, 0);
+}
+
+.contact-text h1 {
+  font-size: 3.5rem;
+}
+
+.contact-text p {
+  font-size: 2.5rem;
+  margin: 25px 0px 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  color: black;
+  max-width: 2000px;
+  margin-top: 20px;
+}
+
+.textarea {
+  height: 200px;
+  width: 500px;
+  resize: none;
+}
+
+.body {
+  background: var(--blue2-background-gradient);
+  height: 6000px;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.toolbar {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 10%;
+  box-sizing: border-box;
+  max-height: 60px;
+}
+
+.toolbar li {
+  font-size: 20px;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.toolbar li:first-child {
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.toolbar li a {
+  transition: all 0.3s ease 0s;
+}
+
+.toolbar li a:hover {
+  color: var(--blue-hover);
+  font-size: larger;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 3s;
   }
 }
 
@@ -25,13 +204,14 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--blue-hover);
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
