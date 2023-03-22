@@ -15,7 +15,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-decoration: none;
-  color: whitesmoke;
 
   margin: 0;
   padding: 0;
@@ -30,7 +29,7 @@
   transition: all 20s;
   position: absolute;
   left: 25%;
-  top: 40%;
+  top: 20%;
   transform: translate(-13%, -42%);
   color: #fff;
 }
@@ -68,13 +67,13 @@
 
 #Projects {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }
 
 .projects-text {
   position: absolute;
   left: 25%;
-  top: 200%;
+  top: 218%;
   transform: translate(-13%, -42%);
   color: #fff;
 }
@@ -93,8 +92,8 @@
   height: 50vh;
   position: absolute;
 
-  left: 5%;
-  top: 280%;
+  left: 0%;
+  top: 300%;
 
   display: flex;
   flex-direction: column;
@@ -110,6 +109,7 @@
 }
 
 .contact-text h1 {
+  color: whitesmoke;
   font-size: 3.5rem;
 }
 
@@ -146,6 +146,7 @@
 }
 
 .toolbar {
+  color: whitesmoke;
   background-color: black;
   display: flex;
   justify-content: flex-end;
@@ -161,9 +162,11 @@
   list-style: none;
   display: inline-block;
   padding: 0px 20px;
+  user-select: none;
 }
 
 .toolbar li:first-child {
+  color: whitesmoke;
   margin-right: auto;
   font-size: 30px;
 }

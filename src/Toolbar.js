@@ -3,28 +3,32 @@ import { Link } from 'react-router-dom'
 
 export const Toolbar = () => {
 
+    function scrollToSection(section){
+        const element = document.getElementById(section);
+        element.scrollIntoView()
+    }
+
     return (
         <nav className='header'>
             <ul className='toolbar'>
                 <li className='home'>
-                   
-                    <a href='Home'>Home</a>
+                    <a>Home</a>
                 </li>
 
                 <li className='other'>
-                    <a href='About'>About</a>
+                    <a onClick={() => scrollToSection('About')}>About</a>
                 </li>
 
                 <li className='other'>
-                    <a href='Experience'>Experience</a>
+                    <a onClick={() => scrollToSection('Experience')}>Experience</a>
                 </li>
 
                 <li className='other'>
-                    <a href='Projects'>Projects</a>
+                    <a onClick={() => scrollToSection('Projects')}>Projects</a>
                 </li>
 
                 <li className='other'>
-                    <a href='Contact'>Contact</a>
+                    <a onClick={() => scrollToSection('Contact')}>Contact</a>
                 </li>
             </ul>
         </nav>
