@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
-  --grey-background-gradient: linear-gradient(0deg, #282c34, grey);
+  --grey-background-gradient: linear-gradient(0deg, #211f1f00, rgb(39, 33, 33));
   --blue-background-gradient: linear-gradient(to right, #6190e8, #a7bfe8);
-  --blue2-background-gradient: linear-gradient(0deg, #8ed9ff, #000c40);
+  --blue2-background-gradient: linear-gradient(0deg, #8ed9ff, #79797c);
+
 
   --blue-hover: lightblue;
 }
@@ -20,100 +21,26 @@
   padding: 0;
 }
 
-#About {
+.content-div {
   width: 100%;
   height: 100vh;
-}
-
-.about-text {
-  transition: all 20s;
-  position: absolute;
-  left: 25%;
-  top: 20%;
-  transform: translate(-13%, -42%);
-  color: #fff;
-}
-
-.about-text h1 {
-  font-size: 3.5rem;
-}
-
-.about-text p {
-  font-size: 2.5rem;
-  margin: 25px 0px 25px;
-}
-
-#Experience {
-  width: 100%;
-  height: 100vh;
-}
-
-.experience-text {
-  position: absolute;
-  left: 25%;
-  top: 120%;
-  transform: translate(-13%, -42%);
-  color: #fff;
-}
-
-.experience-text h1 {
-  font-size: 3.5rem;
-}
-
-.experience-text p {
-  font-size: 2.5rem;
-  margin: 25px 0px 25px;
-}
-
-#Projects {
-  width: 100%;
-  height: 80vh;
-}
-
-.projects-text {
-  position: absolute;
-  left: 25%;
-  top: 218%;
-  transform: translate(-13%, -42%);
-  color: #fff;
-}
-
-.projects-text h1 {
-  font-size: 3.5rem;
-}
-
-.projects-text p {
-  font-size: 2.5rem;
-  margin: 25px 0px 25px;
-}
-
-#Contact{
-  width: 100%;
-  height: 50vh;
-  position: absolute;
-
-  left: 0%;
-  top: 300%;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 40px 0px;
+  justify-content: center;
 }
 
-.contact-text {
-  transform: translate(-13%, -42%);
-  color: rgb(0, 0, 0);
+.content-text {
+  position: absolute;
+  left: 40%;
+  transition: all 20s;
+  color: #fff;
 }
 
-.contact-text h1 {
-  color: whitesmoke;
+.content-text h1 {
   font-size: 3.5rem;
 }
 
-.contact-text p {
+.content-text p {
   font-size: 2.5rem;
   margin: 25px 0px 25px;
 }
@@ -135,7 +62,7 @@
 }
 
 .body {
-  background: var(--blue2-background-gradient);
+  background: var(--grey-background-gradient);
   height: 6000px;
 }
 
@@ -147,7 +74,7 @@
 
 .toolbar {
   color: whitesmoke;
-  background-color: black;
+  background-color: rgb(74, 74, 74);
   display: flex;
   justify-content: flex-end;
   flex-direction: row;

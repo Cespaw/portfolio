@@ -36,16 +36,16 @@ const Contact = (props) => {
     }
 
     return (
-        <section id='Contact'>
-            <div className='contact-text'>
+        <section id='Contact' className='content-div'>
+            <div className='content-text'>
                 <h1>Contact</h1>
+                <form ref={form} className='form' onSubmit={sendEmail}>
+                    <input type='text' name="from_name" placeholder='Name' value={props.name} onChange={e => props.setName(e.target.value)}></input>
+                    <input type='text' name="from_email" placeholder='Email' value={props.email} onChange={e => props.setEmail(e.target.value)}></input>
+                    <textarea className='textarea' name="message" maxLength={2000} value={props.message} onChange={e => props.setMessage(e.target.value)}></textarea>
+                    <input type="submit" value="Send"></input>
+                </form>
             </div>
-            <form ref={form} className='form' onSubmit={sendEmail}>
-                <input type='text' name="from_name" placeholder='Name' value={props.name} onChange={e => props.setName(e.target.value)}></input>
-                <input type='text' name="from_email" placeholder='Email' value={props.email} onChange={e => props.setEmail(e.target.value)}></input>
-                <textarea className='textarea' name="message" maxLength={2000} value={props.message} onChange={e => props.setMessage(e.target.value)}></textarea>
-                <input type="submit" value="Send"></input>
-            </form>
             <ToastContainer />
         </section>
     )

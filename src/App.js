@@ -38,7 +38,7 @@ function App() {
   return (
     <div className='body'>
 
-      <Toolbar></Toolbar>
+      <Toolbar/>
       <div className="hidden">
         <About />
       </div>
