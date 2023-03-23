@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
 const Projects = () => {
     return (
@@ -6,7 +7,15 @@ const Projects = () => {
             <div className="content-text">
                 <h1>Projects</h1>
                 <p>Some of my projects</p>
-                <p>hellooooo</p>
+                <div className='cardholder'>
+
+                    <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+
+                </div>
+
             </div>
         </section>
     )
