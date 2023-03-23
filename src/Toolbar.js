@@ -11,10 +11,6 @@ export const Toolbar = () => {
     return (
         <nav className='header'>
             <ul className='toolbar'>
-                <li className='home'>
-                    <a>Home</a>
-                </li>
-
                 <li className='other'>
                     <a onClick={() => scrollToSection('About')}>About</a>
                 </li>

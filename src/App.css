@@ -76,7 +76,7 @@
   color: whitesmoke;
   background-color: rgb(74, 74, 74);
   display: flex;
-  justify-content: flex-end;
+  justify-content:space-around;
   flex-direction: row;
   align-items: center;
   padding: 30px 10%;
@@ -90,12 +90,6 @@
   display: inline-block;
   padding: 0px 20px;
   user-select: none;
-}
-
-.toolbar li:first-child {
-  color: whitesmoke;
-  margin-right: auto;
-  font-size: 30px;
 }
 
 .toolbar li a {
