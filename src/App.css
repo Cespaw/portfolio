@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
-  --grey-background-gradient: linear-gradient(0deg, #211f1f00, rgb(39, 33, 33));
+  --grey-background-gradient: linear-gradient(20deg, #00000000, rgb(10, 9, 9));
   --blue-background-gradient: linear-gradient(to right, #6190e8, #a7bfe8);
   --blue2-background-gradient: linear-gradient(0deg, #8ed9ff, #79797c);
 
@@ -48,22 +48,37 @@
 .form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: black;
-  color: black;
-  max-width: 2000px;
+  width: 100%;
   margin-top: 20px;
 }
 
-.textarea {
-  height: 200px;
+input {
+  padding: 7px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px groove #d2d2d2;
+}
+
+input:focus {
+  border: 1px groove #1e1e1e;
+}
+
+textarea {
+  height: 150px;
   width: 500px;
   resize: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  margin-bottom: 10px;
 }
 
 .body {
   background: var(--grey-background-gradient);
-  height: 6000px;
+  height: 7000px;
 }
 
 .header {
